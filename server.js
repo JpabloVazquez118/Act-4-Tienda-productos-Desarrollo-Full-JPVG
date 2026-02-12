@@ -5,6 +5,9 @@ const connectDB = require('./src/config/database');
 const errorhandler = require('./src/middleware/errorhandler');
 
 const app = express();
+const PORT = process.env.PORT || 3000;
+
+connectDB();
 
 app.use(cors());
 app.use(express.json());
@@ -21,13 +24,8 @@ app.get('/', (req, res) => {
 // Middleware de errores
 app.use(errorhandler);
 
-// Solo escuchar en local, no en Vercel
-if (require.main === module) {
-  const PORT = process.env.PORT || 3000;
-  connectDB();
-  app.listen(PORT, () => {
-    console.log(`Servidor corriendo en http://localhost:${PORT}`);
-  });
-}
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+});
 
 module.exports = app;
