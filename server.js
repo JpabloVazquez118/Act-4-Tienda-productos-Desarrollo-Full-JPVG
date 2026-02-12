@@ -6,11 +6,6 @@ const errorhandler = require('./src/middleware/errorhandler');
 
 const app = express();
 
-// Solo conectar a MongoDB si no estamos en Vercel
-if (process.env.NODE_ENV !== 'production') {
-  connectDB();
-}
-
 app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
@@ -27,8 +22,9 @@ app.get('/', (req, res) => {
 app.use(errorhandler);
 
 // Solo escuchar en local, no en Vercel
-if (process.env.NODE_ENV !== 'production') {
+if (require.main === module) {
   const PORT = process.env.PORT || 3000;
+  connectDB();
   app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
   });
