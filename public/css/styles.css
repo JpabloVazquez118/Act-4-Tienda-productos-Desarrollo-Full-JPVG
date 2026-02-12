@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a2e;
+  color: #eee;
+}
+
+header {
+  background: linear-gradient(135deg, #6a0dad, #9d4edd);
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(106, 13, 173, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(157, 78, 221, 0.8);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-info span {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.btn-logout {
+  padding: 8px 16px;
+  background-color: #ff4455;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-logout:hover {
+  background-color: #ff6677;
+}
+
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.form-section {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  background-color: #16213e;
+  border: 2px solid #6a0dad;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.form-section h2 {
+  text-align: center;
+  color: #9d4edd;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  color: #c77dff;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #0f3460;
+  border: 2px solid #6a0dad;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: #9d4edd;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-submit {
+  flex: 1;
+  padding: 12px;
+  background: linear-gradient(135deg, #6a0dad, #9d4edd);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(135deg, #9d4edd, #c77dff);
+}
+
+.btn-cancelar {
+  flex: 1;
+  padding: 12px;
+  background-color: #555;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-cancelar:hover {
+  background-color: #777;
+}
+
+#productos h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #9d4edd;
+  margin-bottom: 30px;
+  text-shadow: 0 0 5px rgba(157, 78, 221, 0.6);
+}
+
+#lista-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.producto {
+  background-color: #16213e;
+  border: 2px solid #6a0dad;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(106, 13, 173, 0.3);
+}
+
+.producto img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #0f3460;
+}
+
+.producto h3 {
+  font-size: 1.3rem;
+  color: #c77dff;
+  margin-bottom: 10px;
+}
+
+.producto p {
+  color: #bbb;
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.producto .precio {
+  font-size: 1.5rem;
+  color: #00ff88;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.producto .stock {
+  color: #ffa500;
+  font-weight: bold;
+}
+
+.producto-acciones {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn-editar,
+.btn-eliminar {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-editar {
+  background-color: #ffa500;
+  color: #000;
+}
+
+.btn-editar:hover {
+  background-color: #ffb733;
+}
+
+.btn-eliminar {
+  background-color: #ff4455;
+  color: #fff;
+}
+
+.btn-eliminar:hover {
+  background-color: #ff6677;
+}

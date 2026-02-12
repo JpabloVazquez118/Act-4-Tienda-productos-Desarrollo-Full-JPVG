@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+}
+
+.login-box {
+  background-color: #16213e;
+  border: 2px solid #6a0dad;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 8px 25px rgba(106, 13, 173, 0.4);
+}
+
+.login-box h1 {
+  text-align: center;
+  color: #9d4edd;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(157, 78, 221, 0.6);
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  color: #c77dff;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #0f3460;
+  border: 2px solid #6a0dad;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #9d4edd;
+  box-shadow: 0 0 10px rgba(157, 78, 221, 0.5);
+}
+
+.btn-login {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #6a0dad, #9d4edd);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-login:hover {
+  background: linear-gradient(135deg, #9d4edd, #c77dff);
+  box-shadow: 0 4px 15px rgba(157, 78, 221, 0.6);
+}
+
+.mensaje {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.95rem;
+  display: none;
+}
+
+.mensaje.success {
+  background-color: #00ff8844;
+  border: 2px solid #00ff88;
+  color: #00ff88;
+  display: block;
+}
+
+.mensaje.error {
+  background-color: #ff445544;
+  border: 2px solid #ff4455;
+  color: #ff4455;
+  display: block;
+}
+
+.registro-link {
+  text-align: center;
+  margin-top: 25px;
+  color: #bbb;
+  font-size: 0.95rem;
+}
+
+.registro-link a {
+  color: #9d4edd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.registro-link a:hover {
+  color: #c77dff;
+  text-decoration: underline;
+}
