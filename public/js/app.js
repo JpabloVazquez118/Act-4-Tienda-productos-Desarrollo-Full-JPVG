@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://act-4-tienda-productos-desarrollo-full.onrender.com/api';
 let modoedicion = false;
 let productoeditandoid = null;
 
